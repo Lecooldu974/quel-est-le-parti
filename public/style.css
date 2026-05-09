@@ -445,8 +445,9 @@ body[data-bg="none"]::before { display: none; }
   .tagline { display: none; }
   /* Titre : min réduit à 12px, wrapping autorisé pour éviter le débordement */
   .title-block h1 { font-size: clamp(12px, 4vw, 48px); white-space: normal; line-height: 1.1; }
-  /* Labels des stats cachés sur mobile — trop longs pour les petites cartes */
-  .stat-top > span:first-child { display: none; }
+  /* Stats : 2×2 pour que les labels restent lisibles sur mobile */
+  .stats { flex-wrap: wrap; }
+  .stat-card { flex: 1 1 calc(50% - 5px); }
   /* Badges cachés pour gagner de la place */
   .mode-btn .badge { display: none; }
   /* Passage en colonne unique, scroll vertical autorisé, horizontal interdit */
