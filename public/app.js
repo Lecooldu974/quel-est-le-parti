@@ -143,13 +143,19 @@ function setupEvents() {
     if (!isTouch && !revealed) setActiveMacro(null);
   });
 
-  // Pause auto-avance quand la souris est sur la photo
+  // Pause auto-avance quand la souris/doigt est sur la photo
   $('deputy-card').addEventListener('mouseenter', () => {
     if (revealed) clearTimeout(autoTimer);
   });
   $('deputy-card').addEventListener('mouseleave', () => {
     if (revealed) autoTimer = setTimeout(nextDeputy, 1000);
   });
+  $('deputy-card').addEventListener('touchstart', () => {
+    if (revealed) clearTimeout(autoTimer);
+  }, { passive: true });
+  $('deputy-card').addEventListener('touchend', () => {
+    if (revealed) autoTimer = setTimeout(nextDeputy, 1000);
+  }, { passive: true });
 
   // Keyboard shortcut
   document.addEventListener('keydown', e => {
