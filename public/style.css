@@ -33,6 +33,7 @@
 html, body {
   height: 100%;
   overflow: hidden;
+  max-width: 100%;
   background: var(--paper);
   color: var(--ink);
   font-family: 'Space Grotesk', system-ui, sans-serif;
@@ -444,10 +445,11 @@ body[data-bg="none"]::before { display: none; }
   .tagline { display: none; }
   /* Badges cachés pour gagner de la place */
   .mode-btn .badge { display: none; }
-  /* Passage en colonne unique, scroll autorisé */
+  /* Passage en colonne unique, scroll vertical autorisé, horizontal interdit */
   .main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    overflow-x: hidden;
     overflow-y: auto;
     height: auto;
   }
@@ -455,8 +457,11 @@ body[data-bg="none"]::before { display: none; }
   .deputy-card { height: auto; overflow: visible; }
   .photo-wrap { aspect-ratio: 3/4; width: min(100%, calc(35vh * 0.75)); margin: 0 auto; }
   .right-col { height: auto; gap: var(--gap); }
-  .panel { height: auto; flex: none; overflow: visible; }
-  .hemicycle-wrap { flex: none; aspect-ratio: 2 / 1.1; min-height: unset; }
+  .panel { height: auto; flex: none; overflow: hidden; }
+  .hemicycle-wrap { flex: none; aspect-ratio: 2 / 1.1; min-height: unset; overflow: hidden; }
+  /* Modes : label caché, boutons partagent la largeur disponible */
+  .mode-label { display: none; }
+  .mode-btn { flex: 1; justify-content: center; }
   .controls-panel { flex-shrink: 0; }
   .next-btn { margin-top: var(--gap-inner); }
 }
