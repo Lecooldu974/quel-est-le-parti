@@ -15,8 +15,8 @@
   --yellow:    #ffd23f;
 
   --m-gauche: #e63946;
-  --m-droite: #2a4dff;
-  --m-facho:  #0a0a0a;
+  --m-centre: #ffa500;
+  --m-droite:  #2a4dff;
 
   --shadow:    6px 6px 0 0 var(--ink);
   --shadow-lg: 10px 10px 0 0 var(--ink);
