@@ -2,20 +2,20 @@
 
 const MACROS = [
   { id: 'gauche', label: 'Gauche', color: '#e63946', subs: ['GDR', 'LFI-NFP', 'EcoS', 'SOC'] },
-  { id: 'droite', label: 'Droite', color: '#2a4dff', subs: ['EPR', 'Dem', 'HOR', 'LIOT'] },
-  { id: 'facho',  label: 'Facho',  color: '#0a0a0a', subs: ['DR', 'UDR', 'RN'] },
+  { id: 'centre', label: 'Centre', color: '#ffa500', subs: ['EPR', 'Dem', 'HOR', 'LIOT'] },
+  { id: 'droite',  label: 'Droite',  color: '#2a4dff', subs: ['LR', 'UDR', 'RN'] },
 ];
 
 const GROUP_NICKS = {
   'GDR': 'Communiste', 'LFI-NFP': 'Insoumis', 'EcoS': 'Écologiste', 'SOC': 'Socialiste',
-  'EPR': 'Macroniste', 'Dem': 'MoDem', 'HOR': 'Horizons', 'LIOT': 'Indépendant',
-  'DR': 'Républicain', 'UDR': 'Ciottiste', 'RN': 'Frontiste',
+  'EPR': 'Ensemble Pour La République', 'Dem': 'MoDem', 'HOR': 'Horizons', 'LIOT': 'Indépendant',
+  'LR': 'Républicain', 'UDR': 'Union des droites pour la République', 'RN': 'Rassemblement National',
 };
 
 const GROUP_COLORS = {
   'GDR': '#d12a2a', 'LFI-NFP': '#8b3fcf', 'EcoS': '#2da567', 'SOC': '#ff5d8f',
   'EPR': '#ffd23f', 'Dem': '#ff9a3c', 'HOR': '#5cc8f0', 'LIOT': '#4b3cd1',
-  'DR': '#1f3a6b', 'UDR': '#6b3f1f', 'RN': '#0a0a0a',
+  'LR': '#0045b1', 'UDR': '#004a8b', 'RN': '#144478',
 };
 
 // Groupes à fond clair → texte sombre
