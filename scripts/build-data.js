@@ -19,9 +19,9 @@ const GROUPS_CONFIG = {
   'Dem':      { nom: 'Démocrates (MoDem)',                                  couleur: '#ff9a3c' },
   'HOR':      { nom: 'Horizons & Indépendants',                             couleur: '#5cc8f0' },
   'LIOT':     { nom: 'Libertés, Indépendants, Outre-Mer et Territoires',    couleur: '#4b3cd1' },
-  'DR':       { nom: 'Droite Républicaine',                                 couleur: '#1f3a6b' },
-  'UDR':      { nom: 'Union des Droites pour la République',                couleur: '#6b3f1f' },
-  'RN':       { nom: 'Rassemblement National',                              couleur: '#0a0a0a' },
+  'LR':       { nom: 'Les Républicains',                                    couleur: '#0045b1' },
+  'UDR':      { nom: 'Union des Droites pour la République',                couleur: '#004a8b' },
+  'RN':       { nom: 'Rassemblement National',                              couleur: '#144478' },
   'NI':       { nom: 'Non-inscrits',                                        couleur: '#8a8a8a' },
 };
 
